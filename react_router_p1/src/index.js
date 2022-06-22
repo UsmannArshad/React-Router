@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import {BrowserRouter,Route,Routes,Link} from 'react-router-dom'
+import {BrowserRouter,Route,Routes,Link,HashRouter} from 'react-router-dom'
 import Home from './components/home';
 import About from './components/about';
 import Contact from './components/contact';
@@ -9,7 +9,7 @@ import Users from './components/users';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
-  <BrowserRouter>
+  <HashRouter>
         <header>
           <div className="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
             <h5 className="my-0 mr-md-auto font-weight-normal">Company name</h5>
@@ -34,6 +34,6 @@ root.render(
           <Route path="/users/:name" element={<Users/>}/>
           </Routes>
         </div>
-    </BrowserRouter>
+    </HashRouter>
   </>
 );
