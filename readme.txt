@@ -44,3 +44,9 @@ in the browser's address bar using clean URLs and navigates using the browser's 
 =>HashRouter:
 <HashRouter> is for use in web browsers when the URL should not (or cannot) be sent to the server for some reason. 
 This may happen in some shared hosting scenarios where you do not have full control over the server. In these situations, <HashRouter> makes it possible to store the current location in the hash portion of the current URL, so it is never sent to the server.
+In short we can send the things after # instead of sending whole url
+It is not recommended until u have no other choice
+
+=>Memory Router:
+(Everything done internally adress bar not changed)
+A <MemoryRouter> stores its locations internally in an array. Unlike <BrowserHistory> and <HashHistory>, it isn't tied to an external source, like the history stack in a browser. This makes it ideal for scenarios where you need complete control over the history stack, like testing.
