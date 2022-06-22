@@ -17,4 +17,17 @@ but there is a more error as we have single page website its re-rendering everyt
 Solution:Links
 =>Links
 <Link to='/home'>Home</Link> Now page will not reload everytime as in code
+We can send an objet tooo in out to attribute of link like:
+<Link to={{pathname:'/',hash:'usman' etcc}}><Link/>
 
+Nested Links:
+Imagine we have readmore link in our about page and we set up like this:
+<Link to={{pathname:'/readmore'}}><Link/> 
+but it will not redirect to /about/readmore,it will redirect to /readmore which we dont want?
+How to solve it?
+Use hooks like useLoaction,useMatch(path) etc
+useLocation and useMatch are the hooks that provide useful info like params,hash,search,pathname etc
+so now we will write:
+location=useLocation()
+<Link to={{pathname:`${location.pathname}/readme`}}>Readme</Link>
+now we will redirect to 

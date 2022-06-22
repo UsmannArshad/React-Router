@@ -1,9 +1,17 @@
 import React from "react";
+import {useLocation,Link } from "react-router-dom";
 const About=()=>{
-    console.log("gg")
+    const location=useLocation()
+    //const Match=useMatch(location.pathname)
+    //console.log(window.location)
+    //console.log(location)
+    //console.log(Match)
 return (
     <>
     <h1>About</h1>
+    <Link to={{
+        pathname:`${location.pathname}/readme`
+    }}>Read More</Link>
     </>
 );
 }
