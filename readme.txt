@@ -50,3 +50,6 @@ It is not recommended until u have no other choice
 =>Memory Router:
 (Everything done internally adress bar not changed)
 A <MemoryRouter> stores its locations internally in an array. Unlike <BrowserHistory> and <HashHistory>, it isn't tied to an external source, like the history stack in a browser. This makes it ideal for scenarios where you need complete control over the history stack, like testing.
+
+=>NavLink:
+we can use navlink instead of link now we can change its properties when its active etc like in code
