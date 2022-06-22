@@ -59,3 +59,5 @@ U can use redirect for different purposes like to block user from specific page 
 if username is ali we can redirect to home else show the page.
 1)<Redirect from="" to=""/>
 2)Usenavigate
+let navigate=useNavigate()
+username===ali ? navigate('/home'):<h2>Users Page<h2/>

@@ -10,7 +10,7 @@ return (
     <>
     <h1>About</h1>
     <Link to={{
-        pathname:`${location.pathname}/readme`
+        pathname:`${location.pathname}/readme`    ////now it will go to about/readme
     }}>Read More</Link>
     </>
 );

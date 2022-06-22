@@ -6,6 +6,7 @@ import Home from './components/home';
 import About from './components/about';
 import Contact from './components/contact';
 import Users from './components/users';
+import Error from './components/nopage';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let activeStyle = {
   textDecoration: "underline",
@@ -36,6 +37,7 @@ root.render(
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/users" element={<Users/>}/>
           <Route path="/users/:name" element={<Users/>}/>
+          <Route path="*" element={<Error/>}></Route>
           </Routes>
         </div>
     </BrowserRouter>
