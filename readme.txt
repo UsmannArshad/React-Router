@@ -53,3 +53,9 @@ A <MemoryRouter> stores its locations internally in an array. Unlike <BrowserHis
 
 =>NavLink:
 we can use navlink instead of link now we can change its properties when its active etc like in code
+
+=>Redirect:
+U can use redirect for different purposes like to block user from specific page like
+if username is ali we can redirect to home else show the page.
+1)<Redirect from="" to=""/>
+2)Usenavigate
