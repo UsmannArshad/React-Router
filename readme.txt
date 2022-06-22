@@ -30,4 +30,9 @@ useLocation and useMatch are the hooks that provide useful info like params,hash
 so now we will write:
 location=useLocation()
 <Link to={{pathname:`${location.pathname}/readme`}}>Readme</Link>
-now we will redirect to 
+now we will redirect to  about/readmore
+
+=>Params:
+React parameters are used in React routing, where we have parameters we need to access in the route.
+For example, if we had a route such as <Route path=”/:id” />
+we could access that particular string or value in the route by calling the useParams hook.

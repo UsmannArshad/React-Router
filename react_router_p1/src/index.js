@@ -5,6 +5,7 @@ import {BrowserRouter,Route,Routes,Link} from 'react-router-dom'
 import Home from './components/home';
 import About from './components/about';
 import Contact from './components/contact';
+import Users from './components/users';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
@@ -19,6 +20,7 @@ root.render(
                 pathname:'/contact',
                 hash:'usman',
               }}>Contact</Link>
+              <Link className="p-2 text-dark" to="/users">Users</Link>
             </nav>
           </div>
         </header>
@@ -28,6 +30,8 @@ root.render(
           <Route path="/home" element={<Home/>}/>
           <Route path="/About" element={<About/>}/>
           <Route path="/contact" element={<Contact/>}/>
+          <Route path="/users" element={<Users/>}/>
+          <Route path="/users/:name" element={<Users/>}/>
           </Routes>
         </div>
     </BrowserRouter>
